@@ -8,7 +8,7 @@ import { saveToExcel } from "./helpers/saveToExcel.js";
 
 async function scrapeMessikaProduct(url) {
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     channel: "chrome",
     args: [
       "--disable-gpu",
